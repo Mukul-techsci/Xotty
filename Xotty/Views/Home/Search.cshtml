@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Search Results";
+}
+
+<div class="container-fluid mt-3">
+
+    <!-- 🔍 Search Header -->
+    <div class="d-flex justify-content-between align-items-center mb-3 px-3">
+        <h5>Showing results for "Laptop"</h5>
+
+        <select class="form-select w-auto">
+            <option>Sort By</option>
+            <option>Price Low to High</option>
+            <option>Price High to Low</option>
+            <option>Newest</option>
+        </select>
+    </div>
+
+    <div class="row">
+
+        <!-- 🧱 LEFT FILTER PANEL -->
+        <div class="col-md-3">
+            <div class="filter-box p-3">
+
+                <h6>Filters</h6>
+                <hr />
+
+                <!-- Category -->
+                <h6>Category</h6>
+                <div>
+                    <input type="checkbox"> Laptop <br />
+                    <input type="checkbox"> Mobile <br />
+                    <input type="checkbox"> TV <br />
+                </div>
+
+                <hr />
+
+                <!-- Price -->
+                <h6>Price</h6>
+                <input type="range" class="form-range" />
+                <p>₹10,000 - ₹1,00,000</p>
+
+                <hr />
+
+                <!-- Brand -->
+                <h6>Brand</h6>
+                <div>
+                    <input type="checkbox"> HP <br />
+                    <input type="checkbox"> Dell <br />
+                    <input type="checkbox"> ASUS <br />
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 🛒 PRODUCT GRID -->
+        <div class="col-md-9">
+
+            <div class="row">
+
+                <!-- 🔁 Repeat Card -->
+                @for (int i = 0; i < 12; i++)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+
+                            <img src="~/images/laptop.png" class="card-img-top p-3" height="200px" />
+
+                            <div class="card-body">
+
+                                <h6 class="product-title">ASUS Gaming Laptop</h6>
+
+                                <p class="text-muted small">16GB RAM | RTX 3050</p>
+
+                                <h5 class="text-success">₹65,000</h5>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <button class="btn btn-warning btn-sm w-50">Buy</button>
+                                    <button class="btn btn-outline-secondary btn-sm w-50 ms-2">Cart</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

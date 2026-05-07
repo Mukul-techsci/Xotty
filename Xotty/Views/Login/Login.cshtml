@@ -1,0 +1,74 @@
+﻿@model EntityLayer.enLogin
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<link href="~/css/login.css" rel="stylesheet" />
+
+<div class="login-container d-flex justify-content-center align-items-center">
+
+    <div class="login-box">
+
+        <h3 class="text-center mb-4">Login</h3>
+
+        <form asp-action="Login" asp-controller="Login" method="post">
+
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label>Email</label>
+
+                <input asp-for="Email"
+                       class="form-control"
+                       placeholder="Enter your email" />
+
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label>Password</label>
+
+                <input asp-for="Password"
+                       type="password"
+                       class="form-control"
+                       placeholder="Enter your password" />
+
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <!-- Remember -->
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    <input asp-for="RememberMe" />
+                    Remember me
+                </div>
+            </div>
+
+            <!-- Button -->
+            <button type="submit" class="btn btn-warning w-100 mb-3">
+                Login
+            </button>
+
+            <p class="text-center mt-3">
+                Don’t have an account?
+                <a asp-action="Register" asp-controller="Login">
+                    Register
+                </a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

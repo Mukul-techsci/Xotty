@@ -1,0 +1,12 @@
+D:\Xotty\EntityLayer\bin\Debug\net8.0\EntityLayer.deps.json
+D:\Xotty\EntityLayer\bin\Debug\net8.0\EntityLayer.dll
+D:\Xotty\EntityLayer\bin\Debug\net8.0\EntityLayer.pdb
+D:\Xotty\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.AssemblyReference.cache
+D:\Xotty\EntityLayer\obj\Debug\net8.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Xotty\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfoInputs.cache
+D:\Xotty\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfo.cs
+D:\Xotty\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.CoreCompileInputs.cache
+D:\Xotty\EntityLayer\obj\Debug\net8.0\EntityLayer.dll
+D:\Xotty\EntityLayer\obj\Debug\net8.0\refint\EntityLayer.dll
+D:\Xotty\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
+D:\Xotty\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll

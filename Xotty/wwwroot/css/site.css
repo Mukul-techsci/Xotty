@@ -1,0 +1,56 @@
+﻿.product-card {
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+    .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+
+.deal-box {
+    background: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .deal-box:hover {
+        background: orange;
+        color: black;
+    }
+
+/* 🔹 Filter Panel */
+.filter-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 🔹 Product Card */
+.product-card {
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    }
+
+/* 🔹 Title */
+.product-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* 🔹 Responsive Fix */
+@media (max-width: 768px) {
+    .filter-box {
+        display: none;
+    }
+}

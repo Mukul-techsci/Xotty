@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Xotty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|d:\\xotty\\xotty\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|solutionrelative:xotty\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|d:\\xotty\\xotty\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|solutionrelative:xotty\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|d:\\xotty\\xotty\\views\\login\\myaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|solutionrelative:xotty\\views\\login\\myaddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|d:\\xotty\\xotty\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|solutionrelative:xotty\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|d:\\xotty\\xotty\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|solutionrelative:xotty\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39CA0645-3325-408B-9C67-CF184EB6A812}|DataLayer\\DataLayer.csproj|d:\\xotty\\datalayer\\dllogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39CA0645-3325-408B-9C67-CF184EB6A812}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dllogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E480A76-4D60-467B-BCAC-18BD71AD365E}|BussinessLayer\\BussinessLayer.csproj|d:\\xotty\\bussinesslayer\\bllogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E480A76-4D60-467B-BCAC-18BD71AD365E}|BussinessLayer\\BussinessLayer.csproj|solutionrelative:bussinesslayer\\bllogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06683A39-D3E4-4270-9C19-F0A521A01A1E}|EntityLayer\\EntityLayer.csproj|d:\\xotty\\entitylayer\\enaddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06683A39-D3E4-4270-9C19-F0A521A01A1E}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\enaddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|d:\\xotty\\xotty\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|solutionrelative:xotty\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|d:\\xotty\\xotty\\views\\login\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{446745C5-6C3E-4793-A846-2F3D6BFE87A4}|Xotty\\Xotty.csproj|solutionrelative:xotty\\views\\login\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06683A39-D3E4-4270-9C19-F0A521A01A1E}|EntityLayer\\EntityLayer.csproj|d:\\xotty\\entitylayer\\enlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06683A39-D3E4-4270-9C19-F0A521A01A1E}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\enlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyAddress.cshtml",
+              "DocumentMoniker": "D:\\Xotty\\Xotty\\Views\\Login\\MyAddress.cshtml",
+              "RelativeDocumentMoniker": "Xotty\\Views\\Login\\MyAddress.cshtml",
+              "ToolTip": "D:\\Xotty\\Xotty\\Views\\Login\\MyAddress.cshtml",
+              "RelativeToolTip": "Xotty\\Views\\Login\\MyAddress.cshtml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAMcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-07T10:16:26.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "blLogin.cs",
+              "DocumentMoniker": "D:\\Xotty\\BussinessLayer\\blLogin.cs",
+              "RelativeDocumentMoniker": "BussinessLayer\\blLogin.cs",
+              "ToolTip": "D:\\Xotty\\BussinessLayer\\blLogin.cs",
+              "RelativeToolTip": "BussinessLayer\\blLogin.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAqwDYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T08:51:14.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "enAddress.cs",
+              "DocumentMoniker": "D:\\Xotty\\EntityLayer\\enAddress.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\enAddress.cs",
+              "ToolTip": "D:\\Xotty\\EntityLayer\\enAddress.cs",
+              "RelativeToolTip": "EntityLayer\\enAddress.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T09:37:36.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Xotty\\Xotty\\Program.cs",
+              "RelativeDocumentMoniker": "Xotty\\Program.cs",
+              "ToolTip": "D:\\Xotty\\Xotty\\Program.cs",
+              "RelativeToolTip": "Xotty\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T09:08:51.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dlLogin.cs",
+              "DocumentMoniker": "D:\\Xotty\\DataLayer\\dlLogin.cs",
+              "RelativeDocumentMoniker": "DataLayer\\dlLogin.cs",
+              "ToolTip": "D:\\Xotty\\DataLayer\\dlLogin.cs",
+              "RelativeToolTip": "DataLayer\\dlLogin.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAQwIkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T08:47:36.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Xotty\\Xotty\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Xotty\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Xotty\\Xotty\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Xotty\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T08:37:43.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Xotty\\Xotty\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Xotty\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Xotty\\Xotty\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Xotty\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAE8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-07T08:35:16.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Xotty\\Xotty\\Views\\Login\\Register.cshtml",
+              "RelativeDocumentMoniker": "Xotty\\Views\\Login\\Register.cshtml",
+              "ToolTip": "D:\\Xotty\\Xotty\\Views\\Login\\Register.cshtml",
+              "RelativeToolTip": "Xotty\\Views\\Login\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-06T06:42:35.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "enLogin.cs",
+              "DocumentMoniker": "D:\\Xotty\\EntityLayer\\enLogin.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\enLogin.cs",
+              "ToolTip": "D:\\Xotty\\EntityLayer\\enLogin.cs",
+              "RelativeToolTip": "EntityLayer\\enLogin.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:56:13.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Xotty\\Xotty\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Xotty\\Views\\Login\\Login.cshtml",
+              "ToolTip": "D:\\Xotty\\Xotty\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Xotty\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-22T09:46:38.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Xotty\\Xotty\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Xotty\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Xotty\\Xotty\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Xotty\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwHwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:44:44.169Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

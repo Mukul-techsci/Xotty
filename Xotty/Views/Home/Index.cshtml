@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- 🔥 HERO BANNER -->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/banner1.jpg" class="d-block w-100" height="400px">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/banner2.jpg" class="d-block w-100" height="400px">
+        </div>
+    </div>
+</div>
+ 
+
+<!-- 🛍️ FEATURED PRODUCTS -->
+<div class="container mt-5">
+    <h3 class="mb-4">Trending Products</h3>
+
+    <div class="row">
+        @for (int i = 0; i < 8; i++)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card product-card">
+                    <img src="~/images/laptop.png" class="card-img-top" height="200px">
+
+                    <div class="card-body text-center">
+                        <h6>Gaming Laptop</h6>
+                        <p class="text-success">₹65,000</p>
+                        <button class="btn btn-warning w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- ⚡ CATEGORY BANNERS -->
+<div class="container mt-5">
+    <h3>Shop by Category</h3>
+
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <img src="~/images/mobile.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/tv.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/laptop.jpg" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+<!-- 💥 DEAL SECTION -->
+<div class="container mt-5">
+    <h3>Today’s Deals</h3>
+
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <div class="deal-box">Up to 50% OFF</div>
+        </div>
+        <div class="col-md-3">
+            <div class="deal-box">Best of Electronics</div>
+        </div>
+        <div class="col-md-3">
+            <div class="deal-box">Top Selling</div>
+        </div>
+        <div class="col-md-3">
+            <div class="deal-box">New Arrivals</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,372 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    var userName = Context.Session.GetString("UserName");
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>@ViewData["Title"] - XOTTY</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial;
+        }
+
+        .main-navbar {
+            background: #000;
+            padding: 12px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .logo {
+            color: #00ffd0;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .search-box {
+            width: 45%;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            padding: 12px 45px 12px 15px;
+            background: #f2f2f2;
+        }
+
+        .search-box i {
+            position: absolute;
+            right: 15px;
+            top: 14px;
+            color: black;
+        }
+
+        .nav-right {
+            gap: 25px;
+        }
+
+        .nav-icon {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            font-size: 15px;
+        }
+
+        .profile-dropdown {
+            position: absolute;
+            right: -8px;
+            top: 25px;
+            width: 320px;
+            background: #1b1b1b;
+            border-radius: 10px;
+            display: none;
+            padding: 20px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .profile-area:hover .profile-dropdown {
+            display: block;
+        }
+
+        .dropdown-item-custom {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 10px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .dropdown-item-custom:hover {
+            background: #2d2d2d;
+        }
+
+        .dropdown-item-custom i {
+            font-size: 22px;
+            width: 30px;
+        }
+
+        /* ADDRESS SUB DROPDOWN */
+
+        .address-menu {
+            cursor: pointer;
+        }
+
+        .address-dropdown {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 230px;
+            background: #222;
+            border-radius: 10px;
+            padding: 10px;
+            display: none;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .address-dropdown a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 5px;
+        }
+
+        .address-dropdown a:hover {
+            background: #333;
+            color: #00ffd0;
+        }
+
+        .address-menu:hover .address-dropdown {
+            display: block;
+        }
+
+        .category-bar {
+            background: #181818;
+            padding: 12px;
+            text-align: center;
+            border-top: 1px solid #2c2c2c;
+            border-bottom: 1px solid #2c2c2c;
+        }
+
+        .category-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0px 20px;
+            font-size: 15px;
+        }
+
+        .category-bar a:hover {
+            color: #00ffd0;
+        }
+
+        footer {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 1px solid #2d2d2d;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="main-navbar d-flex align-items-center justify-content-between">
+
+        <div>
+            <a class="logo"
+               href="@Url.Action("Index","Home")">
+                XOTTY
+            </a>
+        </div>
+
+        <form class="search-box"
+              method="get"
+              action="@Url.Action("Search","Home")">
+
+            <input type="text"
+                   name="search"
+                   placeholder="What are you looking for ?" />
+
+            <i class="fa fa-search"></i>
+
+        </form>
+
+        <div class="d-flex align-items-center nav-right">
+
+            <a href="#"
+               class="nav-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                Meerut, 250103
+            </a>
+
+            @if (!string.IsNullOrEmpty(userName))
+            {
+                <div class="position-relative profile-area">
+
+                    <a href="#"
+                       class="nav-icon">
+                        <i class="fa-solid fa-user"></i>
+                        @userName
+                    </a>
+
+                    <div class="profile-dropdown">
+
+                        <!-- MY PROFILE -->
+
+                        <a href="/Account/MyProfile"
+                           class="dropdown-item-custom">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <div>
+                                <div class="fw-bold">My Profile</div>
+                                <small>Edit your profile details</small>
+                            </div>
+
+                        </a>
+
+                        <!-- MY ADDRESS WITH SUBMENU -->
+
+                        <div class="dropdown-item-custom address-menu">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+                                <div class="fw-bold">My Address</div>
+                                <small>Manage your saved addresses</small>
+                            </div>
+
+                            <div class="address-dropdown">
+
+                                <a href="@Url.Action("MyAddress","Login")">
+                                    Home Address
+                                </a>
+
+                                <a href="@Url.Action("MyAddress","Login")">
+                                    Office Address
+                                </a>
+
+                                <a href="@Url.Action("AddAddress","Login")">
+                                    + Add New Address
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ORDERS -->
+
+                        <a href="/Order/MyOrders"
+                           class="dropdown-item-custom">
+
+                            <i class="fa-solid fa-box"></i>
+
+                            <div>
+                                <div class="fw-bold">My Orders</div>
+                                <small>Track and manage orders</small>
+                            </div>
+
+                        </a>
+
+                        <!-- WISHLIST -->
+
+                        <a href="/Wishlist/Index"
+                           class="dropdown-item-custom">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                            <div>
+                                <div class="fw-bold">Wishlist</div>
+                                <small>Your favourite products</small>
+                            </div>
+
+                        </a>
+
+                        <!-- LOGOUT -->
+
+                        <a href="@Url.Action("Logout","Login")"
+                           class="dropdown-item-custom text-danger">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            <div>
+                                <div class="fw-bold">Logout</div>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+            }
+            else
+            {
+                <a href="@Url.Action("Login","Login")"
+                   class="nav-icon">
+                    Login
+                </a>
+
+                <a href="@Url.Action("Register","Login")"
+                   class="nav-icon">
+                    Register
+                </a>
+            }
+
+            <a href="@Url.Action("Cart","Home")"
+               class="nav-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+        </div>
+
+    </nav>
+
+    <div class="category-bar">
+
+        <a href="#">Mobiles</a>
+
+        <a href="#">Laptops</a>
+
+        <a href="#">TVs</a>
+
+        <a href="#">Appliances</a>
+
+        <a href="#">Accessories</a>
+
+        <a href="#">Gaming</a>
+
+        <a href="#">Smart Watch</a>
+
+    </div>
+
+    <main>
+
+        @RenderBody()
+
+    </main>
+
+    <footer>
+
+        © 2026 XOTTY - All Rights Reserved
+
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
