@@ -1,7 +1,14 @@
 wwwroot\css\Login.css
+wwwroot\css\Portfolio.css
 wwwroot\css\Register.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\files\Mukul.pdf
+wwwroot\images\altumcode-PNbDkQ2DDgM-unsplash.jpg
+wwwroot\images\Mukul.jpg
+wwwroot\images\nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg
+wwwroot\images\safar-safarov-koOdUvfGr4c-unsplash.jpg
+wwwroot\js\Portfolio.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

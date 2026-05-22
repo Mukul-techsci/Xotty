@@ -1,0 +1,1081 @@
+﻿@{
+    ViewData["Title"] = "Mukul Kumar - Software Developer | .NET Full-Stack Specialist";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="Mukul Kumar - Software Developer with 5+ years experience in ASP.NET MVC, .NET Core, C#, and SQL Server">
+    <meta name="keywords" content="Software Developer, ASP.NET, .NET Core, C#, Web Developer, Full Stack">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> 
+
+    <!-- Custom CSS -->
+    <link href="~/css/portfolio.css" rel="stylesheet">
+    <!-- Older stable version -->
+    
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-icon"><i class="fas fa-code"></i></span> Mukul Kumar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm ms-2 text-light border-0" id="darkModeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section id="home" class="hero-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 align-items-center">
+                <div class="col-lg-6 col-md-12 text-white" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold mb-3">Mukul Kumar</h1>
+                    <h2 class="h3 mb-4 text-light">Software Developer | .NET Full-Stack Specialist</h2>
+
+                    <!-- Typing Text Animation -->
+                    <div class="typing-container mb-4">
+                        <p class="typing-text h5">
+                            <span class="typed" id="typedText"></span>
+                        </p>
+                    </div>
+
+                    <p class="lead mb-4 text-light">
+                        Building scalable web applications and robust APIs with 5+ years of experience in ASP.NET MVC, .NET Core, and modern web technologies.
+                    </p>
+
+                    <div class="btn-group-hero">
+                        <a href="#contact" class="btn btn-light btn-lg fw-bold me-3">
+                            <i class="fas fa-briefcase me-2"></i>Hire Me
+                        </a>
+                        <a href="#resume" class="btn btn-outline-light btn-lg fw-bold">
+                            <i class="fas fa-download me-2"></i>Download CV
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links mt-4">
+                        <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:mukulkumar040520@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 text-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="profile-image-container">
+                        <div class="profile-image-wrapper">
+                            <img src="~/images/altumcode-PNbDkQ2DDgM-unsplash.jpg" alt="Mukul Kumar" class="profile-image">
+                            <div class="profile-badge">
+                                <span class="badge-text">Available for Work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-indicator">
+            <span class="mouse">
+                <span></span>
+            </span>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="section-custom py-5" id="about">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center" data-aos="fade-up">
+                <span class="title-icon"><i class="fas fa-user-circle"></i></span>
+                About Me
+            </h2>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="~/images/Mukul.jpg" alt="About Me" class="img-fluid rounded-4 shadow-lg">
+                </div>
+
+                <div class="col-lg-6 ps-lg-4" data-aos="fade-left">
+                    <h3 class="mb-4 fw-bold">Highly Skilled .NET Developer</h3>
+                    <p class="text-muted mb-3">
+                        I'm a passionate software developer with 5+ years of professional experience specializing in the .NET ecosystem.
+                        I have a proven track record in building scalable web applications, RESTful APIs, and complex database architectures.
+                    </p>
+
+                    <div class="about-details">
+                        <div class="detail-item mb-3">
+                            <h5><i class="fas fa-check-circle text-primary me-2"></i>ASP.NET MVC & Core Expert</h5>
+                            <p class="text-muted ms-4">Enterprise-grade applications with modern architecture patterns</p>
+                        </div>
+                        <div class="detail-item mb-3">
+                            <h5><i class="fas fa-check-circle text-primary me-2"></i>Full Stack Development</h5>
+                            <p class="text-muted ms-4">Complete solutions from frontend to database optimization</p>
+                        </div>
+                        <div class="detail-item mb-3">
+                            <h5><i class="fas fa-check-circle text-primary me-2"></i>API Integration Expert</h5>
+                            <p class="text-muted ms-4">GDS Systems (Amadeus, Sabre), SOAP & REST APIs</p>
+                        </div>
+                        <div class="detail-item mb-3">
+                            <h5><i class="fas fa-check-circle text-primary me-2"></i>Database Specialist</h5>
+                            <p class="text-muted ms-4">SQL Server optimization, stored procedures, and performance tuning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6 text-center mb-4" data-aos="zoom-in">
+                    <div class="stat-card">
+                        <h3 class="stat-number">5<span class="unit">+</span></h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-card">
+                        <h3 class="stat-number">20<span class="unit">+</span></h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-card">
+                        <h3 class="stat-number">15<span class="unit">+</span></h3>
+                        <p class="stat-label">Technologies</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-card">
+                        <h3 class="stat-number">100<span class="unit">%</span></h3>
+                        <p class="stat-label">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section id="skills" class="section-custom py-5 bg-light-section">
+        <div class="container">
+
+            <!-- Section Title -->
+            <h2 class="section-title mb-5 text-center" data-aos="fade-up">
+                <span class="title-icon">
+                    <i class="fas fa-code"></i>
+                </span>
+                Technical Skills
+            </h2>
+
+            <!-- Skill Cards -->
+            <div class="skills-container">
+
+                <!-- C# -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-hashtag"></i> C#</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+
+                <!-- ASP.NET MVC -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-layer-group"></i> ASP.NET MVC</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <!-- ASP.NET Core -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-rocket"></i> ASP.NET Core</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 88%;"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+
+                <!-- ADO.NET -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-link"></i> ADO.NET</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 96%;"></div>
+                    </div>
+                    <span class="skill-percentage">96%</span>
+                </div>
+
+                <!-- SQL Server -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-database"></i> SQL Server</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 92%;"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                </div>
+
+                <!-- Entity Framework -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-cube"></i> Entity Framework</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fab fa-js-square"></i> JavaScript</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <!-- jQuery -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-code"></i> jQuery</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 88%;"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fab fa-bootstrap"></i> Bootstrap</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <!-- REST API -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-plug"></i> REST API</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <!-- AJAX -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-sync-alt"></i> AJAX</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 88%;"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+
+                <!-- HTML/CSS -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-code"></i> HTML / CSS</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 92%;"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                </div>
+
+                <!-- LINQ -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fas fa-project-diagram"></i> LINQ</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <!-- GitHub -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <h4><i class="fab fa-github"></i> GitHub</h4>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+            </div>
+
+            <!-- Skills by Category -->
+            <div class="row mt-5">
+
+                <!-- Frontend -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="skill-category">
+                        <h5 class="category-title">
+                            <i class="fas fa-laptop-code"></i> Frontend
+                        </h5>
+
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> HTML5</li>
+                            <li><i class="fas fa-check"></i> CSS3</li>
+                            <li><i class="fas fa-check"></i> JavaScript</li>
+                            <li><i class="fas fa-check"></i> jQuery</li>
+                            <li><i class="fas fa-check"></i> Bootstrap</li>
+                            <li><i class="fas fa-check"></i> AJAX</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="skill-category">
+                        <h5 class="category-title">
+                            <i class="fas fa-server"></i> Backend
+                        </h5>
+
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> C#</li>
+                            <li><i class="fas fa-check"></i> ASP.NET MVC</li>
+                            <li><i class="fas fa-check"></i> ASP.NET Core</li>
+                            <li><i class="fas fa-check"></i> Entity Framework</li>
+                            <li><i class="fas fa-check"></i> LINQ</li>
+                            <li><i class="fas fa-check"></i> ADO.NET</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="skill-category">
+                        <h5 class="category-title">
+                            <i class="fas fa-database"></i> Database
+                        </h5>
+
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> SQL Server</li>
+                            <li><i class="fas fa-check"></i> Stored Procedures</li>
+                            <li><i class="fas fa-check"></i> Functions &amp; Triggers</li>
+                            <li><i class="fas fa-check"></i> Query Optimization</li>
+                            <li><i class="fas fa-check"></i> Data Modeling</li>
+                            <li><i class="fas fa-check"></i> Performance Tuning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- APIs & Services -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="skill-category">
+                        <h5 class="category-title">
+                            <i class="fas fa-plug"></i> APIs &amp; Services
+                        </h5>
+
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> REST API</li>
+                            <li><i class="fas fa-check"></i> SOAP Web Services</li>
+                            <li><i class="fas fa-check"></i> Web API</li>
+                            <li><i class="fas fa-check"></i> WCF Services</li>
+                            <li><i class="fas fa-check"></i> JSON</li>
+                            <li><i class="fas fa-check"></i> API Integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE SECTION ============ -->
+    <section id="experience" class="section-custom py-5">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center" data-aos="fade-up">
+                <span class="title-icon"><i class="fas fa-briefcase"></i></span>
+                Work Experience
+            </h2>
+
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h4>Software Developer</h4>
+                                    <h5 class="text-primary"><i class="fas fa-building me-2"></i>ChemAnalyst Data Pvt. Ltd</h5>
+                                </div>
+                                <div class="experience-date">
+                                    <span class="badge bg-primary">May 2023 - Present</span>
+                                </div>
+                            </div>
+
+                            <p class="text-muted mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>Noida Sector-57
+                            </p>
+
+                            <h6 class="fw-bold mb-3">Responsibilities:</h6>
+                            <ul class="experience-list">
+                                <li>Developed and maintained enterprise web applications using ASP.NET MVC and C#</li>
+                                <li>Designed and consumed RESTful APIs using Web API</li>
+                                <li>Implemented Entity Framework for database operations</li>
+                                <li>Created and optimized SQL Server stored procedures and functions</li>
+                                <li>Integrated frontend using JavaScript, jQuery, AJAX, and Bootstrap</li>
+                                <li>Worked in 3-tier architecture ensuring performance and scalability</li>
+                            </ul>
+
+                            <div class="tech-stack mt-3">
+                                <span class="tech-badge">ASP.NET MVC</span>
+                                <span class="tech-badge">C#</span>
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">Entity Framework</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h4>Software Developer</h4>
+                                    <h5 class="text-primary"><i class="fas fa-building me-2"></i>Wizie India Pvt. Ltd</h5>
+                                </div>
+                                <div class="experience-date">
+                                    <span class="badge bg-info">April 2021 - May 2023</span>
+                                </div>
+                            </div>
+
+                            <p class="text-muted mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>Gurugram Sector-16
+                            </p>
+
+                            <h6 class="fw-bold mb-3">Responsibilities:</h6>
+                            <ul class="experience-list">
+                                <li>Developed flight booking applications using ASP.NET MVC and C#</li>
+                                <li>Integrated SOAP and REST APIs with PSS systems (Amadeus, Sabre, Travelport)</li>
+                                <li>Retrieved real-time pricing and seat availability data</li>
+                                <li>Tested APIs using Postman for accuracy and performance</li>
+                                <li>Created SQL Server stored procedures and optimized queries</li>
+                                <li>Implemented WCF services for secure system communication</li>
+                            </ul>
+
+                            <div class="tech-stack mt-3">
+                                <span class="tech-badge">ASP.NET MVC</span>
+                                <span class="tech-badge">C#</span>
+                                <span class="tech-badge">WCF Services</span>
+                                <span class="tech-badge">REST API</span>
+                                <span class="tech-badge">SOAP</span>
+                                <span class="tech-badge">GDS Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section id="projects" class="section-custom py-5 bg-light-section">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center" data-aos="fade-up">
+                <span class="title-icon"><i class="fas fa-project-diagram"></i></span>
+                Featured Projects
+            </h2>
+
+            <div class="row">
+
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop"
+                                 alt="ChemAnalyst"
+                                 class="img-fluid">
+
+                            <div class="project-overlay">
+                                <a href="https://www.chemanalyst.com/"
+                                   target="_blank"
+                                   class="project-btn btn btn-light btn-sm me-2">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h4>ChemAnalyst</h4>
+                            <p class="text-muted small mb-3">
+                                Chemical Market Research & Analytics Platform
+                            </p>
+
+                            <div class="project-tech">
+                                <span class="tech-badge-sm">ASP.NET MVC</span>
+                                <span class="tech-badge-sm">SQL Server</span>
+                                <span class="tech-badge-sm">jQuery</span>
+                                <span class="tech-badge-sm">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1529074963764-98f45c47344b?q=80&w=1200&auto=format&fit=crop"
+                                 alt="Techsci Research"
+                                 class="img-fluid">
+
+                            <div class="project-overlay">
+                                <a href="https://www.techsciresearch.com/"
+                                   target="_blank"
+                                   class="project-btn btn btn-light btn-sm me-2">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h4>Techsci Research</h4>
+                            <p class="text-muted small mb-3">
+                                Research & Business Intelligence Platform
+                            </p>
+
+                            <div class="project-tech">
+                                <span class="tech-badge-sm">ASP.NET Core</span>
+                                <span class="tech-badge-sm">Entity Framework</span>
+                                <span class="tech-badge-sm">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&auto=format&fit=crop"
+                                 alt="Book Zentravels"
+                                 class="img-fluid">
+
+                            <div class="project-overlay">
+                                <a href="https://book.zentravels.com/"
+                                   target="_blank"
+                                   class="project-btn btn btn-light btn-sm me-2">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h4>Book Zentravels</h4>
+                            <p class="text-muted small mb-3">
+                                Flight Booking & Travel Management System
+                            </p>
+
+                            <div class="project-tech">
+                                <span class="tech-badge-sm">ASP.NET MVC</span>
+                                <span class="tech-badge-sm">SOAP API</span>
+                                <span class="tech-badge-sm">Amadeus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1200&auto=format&fit=crop"
+                                 alt="Airline Ticket Centre"
+                                 class="img-fluid">
+
+                            <div class="project-overlay">
+                                <a href="https://airlineticketcentre.ca/"
+                                   target="_blank"
+                                   class="project-btn btn btn-light btn-sm me-2">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h4>Airline Ticket Centre</h4>
+                            <p class="text-muted small mb-3">
+                                Real-Time Airline Ticket Booking Portal
+                            </p>
+
+                            <div class="project-tech">
+                                <span class="tech-badge-sm">ASP.NET MVC</span>
+                                <span class="tech-badge-sm">REST API</span>
+                                <span class="tech-badge-sm">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=1200&auto=format&fit=crop"
+                                 alt="Embark Insider"
+                                 class="img-fluid">
+
+                            <div class="project-overlay">
+                                <a href="http://booking.embarkinsider.com/"
+                                   target="_blank"
+                                   class="project-btn btn btn-light btn-sm me-2">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h4>Embark Insider</h4>
+                            <p class="text-muted small mb-3">
+                                Smart Travel Booking & Reservation Platform
+                            </p>
+
+                            <div class="project-tech">
+                                <span class="tech-badge-sm">C#</span>
+                                <span class="tech-badge-sm">Web API</span>
+                                <span class="tech-badge-sm">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+                                 alt="Perfect IBE"
+                                 class="img-fluid">
+
+                            <div class="project-overlay">
+                                <a href="http://www.wizie.com/perfect-ibe.html"
+                                   target="_blank"
+                                   class="project-btn btn btn-light btn-sm me-2">
+                                    <i class="fas fa-external-link-alt me-1"></i>Live Site
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h4>Perfect IBE</h4>
+                            <p class="text-muted small mb-3">
+                                Internet Booking Engine for Airlines & Travel
+                            </p>
+
+                            <div class="project-tech">
+                                <span class="tech-badge-sm">ASP.NET MVC</span>
+                                <span class="tech-badge-sm">SOAP Services</span>
+                                <span class="tech-badge-sm">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES SECTION ============ -->
+    <section id="services" class="section-custom py-5">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center" data-aos="fade-up">
+                <span class="title-icon"><i class="fas fa-cogs"></i></span>
+                Services I Offer
+            </h2>
+
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Full Stack Web Development</h4>
+                        <p class="text-muted">Complete web applications from UI design to database, covering frontend and backend development.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h4>ASP.NET MVC Development</h4>
+                        <p class="text-muted">Enterprise-grade MVC applications with proper architectural patterns and best practices.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>.NET Core Development</h4>
+                        <p class="text-muted">Modern cross-platform solutions using ASP.NET Core with microservices architecture.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h4>REST API Development</h4>
+                        <p class="text-muted">Scalable and secure REST APIs with proper documentation and integration capabilities.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>SQL Server Design & Optimization</h4>
+                        <p class="text-muted">Database design, performance tuning, stored procedures, and query optimization.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h4>Third-Party API Integration</h4>
+                        <p class="text-muted">GDS systems (Amadeus, Sabre, Travelport), SOAP services, and REST API integration.</p>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h4>Website Maintenance & Support</h4>
+                        <p class="text-muted">Ongoing maintenance, bug fixes, feature updates, and technical support services.</p>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Admin Dashboard Development</h4>
+                        <p class="text-muted">Custom admin dashboards with data visualization, analytics, and management tools.</p>
+                    </div>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Enterprise Solutions</h4>
+                        <p class="text-muted">Large-scale enterprise applications with scalability, security, and performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ RESUME DOWNLOAD SECTION ============ -->
+    <section id="resume" class="section-custom py-5 bg-light-section">
+        <div class="container">
+            <div class="resume-download-section text-center" data-aos="zoom-in">
+                <h2 class="mb-4">
+                    <i class="fas fa-file-pdf text-danger me-2"></i>Download My Resume
+                </h2>
+                <p class="lead mb-4 text-muted">
+                    Get my complete CV with detailed information about my experience, education, and skills.
+                </p>
+                <a href="@Url.Content("~/files/Mukul.pdf")"
+                   class="btn btn-primary btn-lg me-3"
+                   download>
+                    <i class="fas fa-download me-2"></i>
+                    Download PDF
+                </a>
+                <a href="#contact" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-envelope me-2"></i>Or Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="section-custom py-5">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center" data-aos="fade-up">
+                <span class="title-icon"><i class="fas fa-envelope"></i></span>
+                Get In Touch
+            </h2>
+
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-lg-4 mb-4" data-aos="fade-right">
+                    <div class="contact-info-card mb-4">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>Phone</h5>
+                        <p class="text-muted">
+                            <a href="tel:8006396469">+91 8006396469</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-card mb-4">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p class="text-muted">
+                            <a href="mailto:mukulkumar040520@gmail.com">mukulkumar040520@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-card mb-4">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Location</h5>
+                        <p class="text-muted">
+                            Meerut, Uttar Pradesh, India<br>
+                            <small>(Open to Onsite/Hybrid)</small>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5>Availability</h5>
+                        <p class="text-muted">
+                            Available for immediate projects<br>
+                            Response time: 24 hours
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form" asp-action="SendEmail" asp-controller="Portfolio" method="post">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="contactName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="contactName" name="Name" placeholder="John Doe" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="contactEmail" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="contactEmail" name="Email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactPhone" class="form-label">Phone Number (Optional)</label>
+                            <input type="tel" class="form-control" id="contactPhone" name="Phone" placeholder="+91 9876543210">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" name="Subject" placeholder="Project inquiry" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" name="Message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactFile" class="form-label">Attach File (Optional)</label>
+                            <input type="file" class="form-control" id="contactFile" name="Attachment" accept=".pdf,.doc,.docx,.xls,.xlsx">
+                            <small class="text-muted">Max file size: 5MB. Allowed: PDF, DOC, XLS</small>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                I agree to the terms and privacy policy
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                        <i class="fas fa-check-circle me-2"></i>
+                        <strong>Thank you!</strong> Your message has been sent successfully. I'll get back to you soon.
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="errorMessage" class="alert alert-danger mt-3" style="display: none;">
+                        <i class="fas fa-exclamation-circle me-2"></i>
+                        <strong>Error!</strong> Something went wrong. Please try again.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer-custom py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-code me-2"></i>Mukul Kumar</h5>
+                    <p class="text-muted">Software Developer | .NET Full-Stack Specialist</p>
+                    <p class="text-muted">Building scalable web applications with modern technologies.</p>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="#projects" class="text-muted text-decoration-none">Projects</a></li>
+                        <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <h5>Follow Me</h5>
+                    <div class="social-links footer-social">
+                        <a href="https://linkedin.com" target="_blank" class="social-link text-white me-3">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-link text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link text-white me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:mukulkumar040520@gmail.com" class="social-link text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">
+                        &copy; 2024 Mukul Kumar. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted mb-0">
+                        Designed & Developed by <strong>Mukul Kumar</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Typed JS for Typing Animation -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+
+    <!-- Custom JavaScript -->
+    <script src="~/js/portfolio.js"></script>
+
+</body>
+</html>
